@@ -59,6 +59,11 @@ export default {
           "4": "hsl(var(--chart-4) / <alpha-value>)",
           "5": "hsl(var(--chart-5) / <alpha-value>)",
         },
+        "orange-accent": {
+          DEFAULT: "hsl(var(--orange-accent) / <alpha-value>)",
+          foreground: "hsl(var(--orange-accent-foreground) / <alpha-value>)",
+        },
+        "light-gray-bg": "hsl(var(--light-gray-bg) / <alpha-value>)",
         sidebar: {
           ring: "hsl(var(--sidebar-ring) / <alpha-value>)",
           DEFAULT: "hsl(var(--sidebar) / <alpha-value>)",

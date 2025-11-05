@@ -52,6 +52,10 @@
 
   --primary-foreground: 0 0% 98%;
 
+  --orange-accent: 31 100% 50%;
+
+  --orange-accent-foreground: 0 0% 98%;
+
   --secondary: 220 9% 86%;
 
   --secondary-foreground: 210 17% 20%;
@@ -75,6 +79,8 @@
   --chart-3: 210 17% 35%;
   --chart-4: 206 45% 55%;
   --chart-5: 31 80% 65%;
+
+  --light-gray-bg: 210 20% 98%;
 
   --font-sans: Inter, Poppins, system-ui, -apple-system, sans-serif;
   --font-serif: Georgia, serif;
@@ -170,6 +176,10 @@
 
   --primary-foreground: 0 0% 98%;
 
+  --orange-accent: 31 100% 60%;
+
+  --orange-accent-foreground: 0 0% 98%;
+
   --secondary: 220 6% 20%;
 
   --secondary-foreground: 0 0% 95%;
@@ -193,6 +203,8 @@
   --chart-3: 210 20% 75%;
   --chart-4: 206 50% 70%;
   --chart-5: 31 85% 75%;
+
+  --light-gray-bg: 210 10% 15%;
 
   --shadow-2xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.30);
   --shadow-xs: 0px 1px 2px 0px hsl(0 0% 0% / 0.35);
