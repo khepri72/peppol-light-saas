@@ -1,0 +1,163 @@
+Create a modern, professional trilingual landing page for **Peppol Light**, a SaaS helping Belgian SMEs prepare for mandatory Peppol e-invoicing (Jan 1, 2026).
+
+## 🎯 GOAL
+Phase 0 - Market Validation: Collect 50 emails in 7 days from Belgian businesses.
+
+## 🛠️ TECH STACK
+- React 18+ with Vite
+- Tailwind CSS (mobile-first responsive)
+- i18next for language switching (FR/NL/EN)
+- Embedded Tally.so form
+
+## 🎨 DESIGN
+**Colors:**
+- Primary: #1F4E78 (blue)
+- Accent: #FF9800 (orange)
+- Text: #2C3E50 (dark gray)
+- Background: #FFFFFF + light gray sections (#F8F9FA)
+
+**Typography:** Inter or Poppins (bold, modern)
+**Style:** Rounded corners, soft shadows, professional
+
+## 📐 PAGE STRUCTURE
+
+### 1. HEADER
+- Logo text: "⚡ Peppol Light"
+- Language selector (FR/NL/EN) - top right, changes entire page
+- Simple, clean design
+
+### 2. HERO SECTION (Above the fold)
+**Main title (large, bold):**
+- FR: "La facturation électronique arrive en 2026. Êtes-vous prêt ?"
+- NL: "Elektronische facturatie komt eraan in 2026. Ben je klaar?"
+- EN: "Electronic invoicing is coming in 2026. Are you ready?"
+
+**Subtitle:**
+- FR: "Toutes les entreprises belges devront utiliser Peppol dès janvier 2026. Peppol Light vous prépare en 5 minutes."
+- NL: "Alle Belgische bedrijven moeten Peppol gebruiken vanaf januari 2026. Peppol Light bereidt je voor in 5 minuten."
+- EN: "All Belgian businesses must use Peppol from January 2026. Peppol Light prepares you in 5 minutes."
+
+**CTA Button (large, orange):**
+- FR: "Rejoindre la liste d'attente (gratuit) →"
+- NL: "Word lid van de wachtlijst (gratis) →"
+- EN: "Join the waiting list (free) →"
+(Button scrolls to form)
+
+### 3. PROBLEM SECTION (3 cards with icons)
+**Title:**
+- FR: "Pourquoi Peppol devient obligatoire ?"
+- NL: "Waarom wordt Peppol verplicht?"
+- EN: "Why is Peppol becoming mandatory?"
+
+**Card 1 - 📅 Legal Deadline**
+- FR: "1er janvier 2026 : toutes les factures entre entreprises belges devront être électroniques via Peppol."
+- NL: "1 januari 2026: alle facturen tussen Belgische bedrijven moeten elektronisch zijn via Peppol."
+- EN: "January 1, 2026: all invoices between Belgian businesses must be electronic via Peppol."
+
+**Card 2 - 🤯 Technical Complexity**
+- FR: "Le format UBL/XML, les certificats et l'enregistrement Access Point sont complexes pour les PME."
+- NL: "Het UBL/XML-formaat, certificaten en Access Point-registratie zijn complex voor KMO's."
+- EN: "UBL/XML format, certificates and Access Point registration are complex for SMEs."
+
+**Card 3 - 💸 Non-Compliance Risk**
+- FR: "Les factures non conformes seront rejetées. Risque de retards de paiement et d'amendes."
+- NL: "Niet-conforme facturen worden geweigerd. Risico op betalingsachterstanden en boetes."
+- EN: "Non-compliant invoices will be rejected. Risk of payment delays and fines."
+
+### 4. SOLUTION SECTION (3 steps)
+**Title:**
+- FR: "Comment Peppol Light vous aide"
+- NL: "Hoe Peppol Light u helpt"
+- EN: "How Peppol Light helps you"
+
+**Step 1️⃣ - Upload**
+- FR: "Déposez votre facture PDF ou Excel actuelle"
+- NL: "Upload je huidige PDF- of Excel-factuur"
+- EN: "Upload your current PDF or Excel invoice"
+
+**Step 2️⃣ - Instant Check**
+- FR: "Notre IA vérifie 8 critères Peppol et vous donne un score 0-100%"
+- NL: "Onze AI controleert 8 Peppol-criteria en geeft je een score van 0-100%"
+- EN: "Our AI checks 8 Peppol criteria and gives you a 0-100% score"
+
+**Step 3️⃣ - Compliant File**
+- FR: "Téléchargez votre facture au format UBL/XML prête pour Peppol"
+- NL: "Download je factuur in UBL/XML-formaat klaar voor Peppol"
+- EN: "Download your invoice in UBL/XML format ready for Peppol"
+
+### 5. TRUST INDICATORS
+**4 trust badges (horizontal row with checkmarks):**
+- ✅ "Conforme norme EN 16931" / "Voldoet aan EN 16931" / "EN 16931 Compliant"
+- ✅ "Compatible logiciels belges" / "Compatibel met Belgische software" / "Compatible with Belgian software"
+- ✅ "Support trilingue FR/NL/EN" / "Drietalige ondersteuning" / "Trilingual support"
+- ✅ "Données hébergées en Belgique" / "Gegevens gehost in België" / "Data hosted in Belgium"
+
+### 6. FORM SECTION
+**Title:**
+- FR: "Rejoignez les 50 premières entreprises (accès gratuit à vie)"
+- NL: "Sluit je aan bij de eerste 50 bedrijven (gratis toegang voor altijd)"
+- EN: "Join the first 50 businesses (free access for life)"
+
+**Embed this Tally form code exactly:**
+```html
+<iframe data-tally-src="https://tally.so/embed/wdLo9A?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" title="Peppol Light - Beta Waitlist"></iframe>
+<script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+```
+
+**Text under form:**
+- FR: "Aucune carte bancaire requise. Vos données ne seront jamais partagées."
+- NL: "Geen creditcard vereist. Je gegevens worden nooit gedeeld."
+- EN: "No credit card required. Your data will never be shared."
+
+### 7. FAQ (3 questions, expandable/collapsible)
+**Q1:**
+- FR: "Peppol Light remplace-t-il mon logiciel comptable ?"
+  - "Non. Peppol Light vous PRÉPARE à Peppol. Ensuite, vous utilisez votre logiciel habituel."
+- NL: "Vervangt Peppol Light mijn boekhoudprogramma?"
+  - "Nee. Peppol Light BEREIDT je voor op Peppol. Daarna gebruik je je gebruikelijke software."
+- EN: "Does Peppol Light replace my accounting software?"
+  - "No. Peppol Light PREPARES you for Peppol. Then you use your usual software."
+
+**Q2:**
+- FR: "C'est vraiment gratuit ?"
+  - "Oui ! Les 50 premiers inscrits auront accès GRATUIT À VIE (1 facture/mois)."
+- NL: "Is het echt gratis?"
+  - "Ja! De eerste 50 inschrijvingen krijgen GRATIS LEVENSLANGE toegang (1 factuur/maand)."
+- EN: "Is it really free?"
+  - "Yes! The first 50 sign-ups get FREE LIFETIME access (1 invoice/month)."
+
+**Q3:**
+- FR: "Quand sera disponible la version finale ?"
+  - "Mars 2025 (phase beta en janvier 2025)."
+- NL: "Wanneer is de definitieve versie beschikbaar?"
+  - "Maart 2025 (bèta-fase in januari 2025)."
+- EN: "When will the final version be available?"
+  - "March 2025 (beta phase in January 2025)."
+
+### 8. FOOTER
+- Text: "Made with ❤️ in Belgium | RapideAgency"
+- Links: "Contact: contact@peppollight.be"
+- Language selector reminder
+
+## 📱 RESPONSIVE BEHAVIOR
+- Stack sections vertically on mobile
+- Form full-width on mobile, centered on desktop
+- Touch-friendly buttons (min 44px height)
+- Optimized for fast loading
+
+## ✅ TECHNICAL REQUIREMENTS
+- Use i18next for proper language management
+- Store language preference in localStorage
+- Smooth scroll to form section when CTA clicked
+- Clean component structure (Hero, Problem, Solution, Form, FAQ, Footer)
+- SEO meta tags with FR description
+- Auto-adjust form height based on content
+
+## 🚀 DELIVERABLES
+- Complete React app with Vite
+- Run with `npm run dev`
+- All text in 3 languages properly managed
+- Tally form correctly embedded and functional
+- Professional design ready for deployment
+
+**Goal: Create a convincing landing page that converts Belgian SMEs into beta users!**
