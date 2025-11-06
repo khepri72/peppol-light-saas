@@ -11,7 +11,7 @@ export function Footer() {
             {t('footer.made')}
           </p>
           <a
-            href="mailto:contact@peppollight.be"
+            href="mailto:contact@rapideagency.com"
             className="text-sm text-primary hover-elevate active-elevate-2 hover:underline"
             data-testid="link-footer-contact"
           >

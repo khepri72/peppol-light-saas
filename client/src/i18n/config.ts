@@ -51,7 +51,7 @@ const resources = {
       },
       footer: {
         made: 'Made in Belgium | RapideAgency',
-        contact: 'Contact: contact@peppollight.be',
+        contact: 'Contact: contact@rapideagency.com',
       },
     },
   },
@@ -104,7 +104,7 @@ const resources = {
       },
       footer: {
         made: 'Made in Belgium | RapideAgency',
-        contact: 'Contact: contact@peppollight.be',
+        contact: 'Contact: contact@rapideagency.com',
       },
     },
   },
@@ -157,7 +157,7 @@ const resources = {
       },
       footer: {
         made: 'Made in Belgium | RapideAgency',
-        contact: 'Contact: contact@peppollight.be',
+        contact: 'Contact: contact@rapideagency.com',
       },
     },
   },
