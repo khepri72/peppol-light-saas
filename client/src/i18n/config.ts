@@ -47,7 +47,7 @@ const resources = {
         q2: 'C\'est vraiment gratuit ?',
         a2: 'Oui ! Les 50 premiers inscrits auront accès GRATUIT À VIE (1 facture/mois).',
         q3: 'Quand sera disponible la version finale ?',
-        a3: 'Mars 2025 (phase beta en janvier 2025).',
+        a3: 'La bêta privée (pour les 50 premiers inscrits) commence en Janvier 2026. La version finale est prévue juste après, début Février 2026.',
       },
       footer: {
         made: 'Made in Belgium | RapideAgency',
@@ -100,7 +100,7 @@ const resources = {
         q2: 'Is het echt gratis?',
         a2: 'Ja! De eerste 50 inschrijvingen krijgen GRATIS LEVENSLANGE toegang (1 factuur/maand).',
         q3: 'Wanneer is de definitieve versie beschikbaar?',
-        a3: 'Maart 2025 (bèta-fase in januari 2025).',
+        a3: 'De privé-bèta (voor de eerste 50 aanmeldingen) start in Januari 2026. De definitieve versie staat gepland voor begin Februari 2026.',
       },
       footer: {
         made: 'Made in Belgium | RapideAgency',
@@ -153,7 +153,7 @@ const resources = {
         q2: 'Is it really free?',
         a2: 'Yes! The first 50 sign-ups get FREE LIFETIME access (1 invoice/month).',
         q3: 'When will the final version be available?',
-        a3: 'March 2025 (beta phase in January 2025).',
+        a3: 'The private beta (for the first 50 sign-ups) begins in January 2026. The final version is scheduled right after, in early February 2026.',
       },
       footer: {
         made: 'Made in Belgium | RapideAgency',
