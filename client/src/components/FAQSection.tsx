@@ -5,6 +5,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { motion } from 'framer-motion';
 
 export function FAQSection() {
   const { t } = useTranslation();
@@ -25,33 +26,87 @@ export function FAQSection() {
       answer: t('faq.a3'),
       testId: 'faq-3',
     },
+    {
+      question: t('faq.q4'),
+      answer: t('faq.a4'),
+      testId: 'faq-4',
+    },
+    {
+      question: t('faq.q5'),
+      answer: t('faq.a5'),
+      testId: 'faq-5',
+    },
   ];
 
   return (
-    <section className="w-full bg-muted/30 py-16 sm:py-20 lg:py-24">
-      <div className="container mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 
-          className="mb-12 text-center text-3xl font-bold text-foreground sm:text-4xl lg:text-5xl"
-          data-testid="text-faq-title"
+    <section id="faq" className="w-full bg-gradient-to-b from-muted/30 to-background py-20 sm:py-28">
+      <div className="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        {/* Section Header */}
+        <motion.div
+          className="mx-auto mb-16 max-w-3xl text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
         >
-          {t('faq.title')}
-        </h2>
+          <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">
+            ❓ FAQ
+          </span>
+          <h2
+            className="mb-4 text-3xl font-bold tracking-tight text-foreground sm:text-4xl lg:text-5xl"
+            data-testid="text-faq-title"
+          >
+            {t('faq.title')}
+          </h2>
+        </motion.div>
 
-        <Accordion type="single" collapsible className="w-full">
-          {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} data-testid={faq.testId}>
-              <AccordionTrigger 
-                className="text-left text-lg font-semibold text-foreground"
-                data-testid={`button-${faq.testId}-trigger`}
+        {/* FAQ Accordion */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <Accordion type="single" collapsible className="w-full space-y-4">
+            {faqs.map((faq, index) => (
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                data-testid={faq.testId}
+                className="rounded-xl border border-border/50 bg-card px-6 shadow-sm transition-all duration-200 hover:border-border data-[state=open]:border-primary/30 data-[state=open]:shadow-md"
               >
-                {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-base text-muted-foreground leading-relaxed">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+                <AccordionTrigger
+                  className="py-5 text-left text-base font-semibold text-foreground hover:no-underline sm:text-lg [&[data-state=open]>svg]:text-primary"
+                  data-testid={`button-${faq.testId}-trigger`}
+                >
+                  {faq.question}
+                </AccordionTrigger>
+                <AccordionContent className="pb-5 text-base leading-relaxed text-muted-foreground">
+                  {faq.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </motion.div>
+
+        {/* Contact CTA */}
+        <motion.div
+          className="mt-12 rounded-2xl border border-border/50 bg-card p-6 text-center shadow-sm sm:p-8"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <p className="text-lg text-foreground">
+            Vous avez d'autres questions ?
+          </p>
+          <a
+            href="mailto:contact@rapideagency.com"
+            className="mt-2 inline-block font-semibold text-primary transition-colors hover:text-primary/80"
+          >
+            Contactez-nous →
+          </a>
+        </motion.div>
       </div>
     </section>
   );
