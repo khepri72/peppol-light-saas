@@ -3,7 +3,7 @@ import { UserPlus, Upload, FileCheck, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
-const REGISTER_URL = 'https://peppol-light-backend.onrender.com/register';
+const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
 
 export function SolutionSection() {
   const { t } = useTranslation();
@@ -146,7 +146,7 @@ export function SolutionSection() {
             size="lg"
             className="group min-h-14 bg-orange-accent px-8 text-lg font-bold text-orange-accent-foreground shadow-lg shadow-orange-accent/25 transition-all duration-300 hover:bg-orange-accent/90 hover:shadow-xl hover:shadow-orange-accent/30"
           >
-            <a href={REGISTER_URL}>
+            <a href={LOGIN_URL}>
               Commencer maintenant
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>

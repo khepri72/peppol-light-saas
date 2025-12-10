@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown, FileCheck, Shield, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const REGISTER_URL = 'https://peppol-light-backend.onrender.com/register';
+const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
 
 export function HeroSection() {
   const { t } = useTranslation();
@@ -106,7 +106,7 @@ export function HeroSection() {
               data-testid="button-hero-cta"
               className="group min-h-14 bg-orange-accent px-8 text-lg font-bold text-orange-accent-foreground shadow-lg shadow-orange-accent/25 transition-all duration-300 hover:bg-orange-accent/90 hover:shadow-xl hover:shadow-orange-accent/30 sm:text-xl"
             >
-              <a href={REGISTER_URL}>
+              <a href={LOGIN_URL}>
                 {t('hero.cta')}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>

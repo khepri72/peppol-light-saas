@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Globe, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-const REGISTER_URL = 'https://peppol-light-backend.onrender.com/register';
+const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
 
 export function Header() {
   const { t, i18n } = useTranslation();
@@ -84,7 +84,7 @@ export function Header() {
             asChild
             className="bg-orange-accent font-semibold text-orange-accent-foreground shadow-md transition-all duration-200 hover:bg-orange-accent/90 hover:shadow-lg"
           >
-            <a href={REGISTER_URL}>
+            <a href={LOGIN_URL}>
               {t('header.cta')}
             </a>
           </Button>
@@ -145,7 +145,7 @@ export function Header() {
               asChild
               className="w-full bg-orange-accent font-semibold text-orange-accent-foreground"
             >
-              <a href={REGISTER_URL}>
+              <a href={LOGIN_URL}>
                 {t('header.cta')}
               </a>
             </Button>

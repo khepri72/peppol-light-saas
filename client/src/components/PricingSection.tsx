@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Check, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const REGISTER_URL = 'https://peppol-light-backend.onrender.com/register';
+const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
 
 export function PricingSection() {
   const { t } = useTranslation();
@@ -155,7 +155,7 @@ export function PricingSection() {
                         : 'border-primary/20 hover:border-primary/40 hover:bg-primary/5'
                     }`}
                   >
-                    <a href={REGISTER_URL}>
+                    <a href={LOGIN_URL}>
                       {t('pricing.choosePlan')}
                     </a>
                   </Button>
