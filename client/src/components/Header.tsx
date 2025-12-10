@@ -34,9 +34,7 @@ export function Header() {
       <div className="container mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <span className="text-lg font-bold text-primary-foreground">P</span>
-          </div>
+          <img src="/logo.svg" alt="Peppol Light Logo" className="h-9 w-9" />
           <span className="text-xl font-bold text-foreground sm:text-2xl" data-testid="text-logo">
             {t('header.logo')}
           </span>
