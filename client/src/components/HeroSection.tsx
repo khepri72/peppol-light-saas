@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, ChevronDown, FileCheck, Shield, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
+const LOGIN_URL = 'https://app.peppollight.com/login';
 
 export function HeroSection() {
   const { t } = useTranslation();

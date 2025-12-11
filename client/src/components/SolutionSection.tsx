@@ -3,7 +3,7 @@ import { UserPlus, Upload, FileCheck, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { motion } from 'framer-motion';
 
-const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
+const LOGIN_URL = 'https://app.peppollight.com/login';
 
 export function SolutionSection() {
   const { t } = useTranslation();

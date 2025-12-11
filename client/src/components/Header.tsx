@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Globe, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
-const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
+const LOGIN_URL = 'https://app.peppollight.com/login';
 
 export function Header() {
   const { t, i18n } = useTranslation();

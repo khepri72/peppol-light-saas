@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from '@/components/ui/card';
 import { Check, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-const LOGIN_URL = 'https://peppol-light-backend.onrender.com/login';
+const LOGIN_URL = 'https://app.peppollight.com/login';
 
 export function PricingSection() {
   const { t } = useTranslation();
